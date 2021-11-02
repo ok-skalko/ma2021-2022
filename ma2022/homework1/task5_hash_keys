@@ -1,0 +1,10 @@
+hash = {
+  1    => 2,
+  nil  => 3,
+ 'kEy' => :value_1,
+ :key  => :value_2,
+  Key:    :value_3
+}
+
+all_keys = hash.keys.map(&:to_s).map(&:downcase).select { |str| str.start_with?('key') }
+puts all_keys.size
