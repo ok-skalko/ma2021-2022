@@ -6,5 +6,4 @@ hash = {
   Key:    :value_3
 }
 
-all_keys = hash.keys.map(&:to_s).map(&:downcase).select { |str| str.start_with?('key') }
-puts all_keys.size
+puts hash.keys.map { |i| i.to_s.downcase }.count('key')
