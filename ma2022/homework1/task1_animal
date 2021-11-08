@@ -1,0 +1,3 @@
+print 'Write the name of the animal '
+animal = gets
+puts "I like #{animal}"

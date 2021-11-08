@@ -1,0 +1,9 @@
+hash = {
+  1    => 2,
+  nil  => 3,
+ 'kEy' => :value_1,
+ :key  => :value_2,
+  Key:    :value_3
+}
+
+puts hash.keys.map { |i| i.to_s.downcase }.count('key')

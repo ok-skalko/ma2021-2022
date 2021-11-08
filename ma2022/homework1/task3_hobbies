@@ -1,0 +1,3 @@
+print 'Do you have a hobby? Write your three favorite '
+hobbies = gets.chomp.split(",")
+puts "Tell me something about #{hobbies.sample.strip}"

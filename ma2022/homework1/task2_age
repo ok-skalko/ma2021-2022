@@ -1,0 +1,3 @@
+print 'How old are you? '
+age = gets.to_i
+puts "In #{100 - age} years you will be 100 years old"
