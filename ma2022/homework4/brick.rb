@@ -1,12 +1,12 @@
 class Brick
+  ALL_COLLORS = %w(red blue green white orange pink broun).freeze
 
   def new_brick
-    brick = Hash[:color, color, :state, state]
+    Hash[:color, color, :state, state]
   end
 
   def color
-    all_colors = [ 'red', 'blue', 'green', 'white', 'orange', 'pink', 'broun']
-    all_colors.sample
+    ALL_COLLORS.sample
   end
 
   def state

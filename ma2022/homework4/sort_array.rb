@@ -1,5 +1,4 @@
 module SortArray
-
   def sort_array(array, field)
     @failed_elements = []
     @correct_elements = []
@@ -10,7 +9,7 @@ module SortArray
 
   def filter_correct_elements(array, field)
     array.each do |el|
-      if el.has_key?(field)
+      if el.key?(field)
         @correct_elements << el
       else
         @failed_elements << el
