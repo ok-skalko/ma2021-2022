@@ -1,15 +1,8 @@
 class Brick
-  ALL_COLLORS = %w(red blue green white orange pink broun).freeze
+  attr_accessor :serial_number, :state, :color
 
-  def new_brick
-    Hash[:color, color, :state, state]
-  end
-
-  def color
-    ALL_COLLORS.sample
-  end
-
-  def state
-    rand(100) < 80 ? 'unbroken' : 'broken'
+  def initialize(color, state)
+    @color = color
+    @state = state
   end
 end
