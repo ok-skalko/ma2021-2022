@@ -6,8 +6,6 @@ class BricksFactory
 
   ALL_COLLORS = %w[red blue green white orange pink broun].freeze
 
-  attr_accessor :serial_number
-
   def initialize(number_of_bricks)
     @number_of_bricks = number_of_bricks
     @serial_number = 0
@@ -37,8 +35,7 @@ class BricksFactory
   end
 
   def unbroken_bricks_sort_by_color
-    unbroken_bricks.sort_by(&:color)
-    # sort_array(unbroken_bricks, 'color')
+    sort_array(unbroken_bricks, :color)
   end
 
   def return_last_ten_unbroken_bricks(color)
